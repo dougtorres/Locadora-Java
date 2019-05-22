@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://ultraq.net.nz/thymelead/layout">
+<head>
+	<title>Cadastra Carro</title>
+</head>
+	<body>
+		<h3>Lista de Carros</h3>
+		<div th:each="carro : ${carros}">
+			<div class="row">
+				<p><span th:text="${carro.modelo}"></span></p>
+				<p><span th:text="${carro.marca.nome}"></span></p>
+				<p><span th:text="${carro.placa}"></span></p>
+			</div>
+		</div>
+	</body>
+</html>
